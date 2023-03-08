@@ -115,16 +115,15 @@ ul {
   align-items: center;
   letter-spacing: 0.04em;
   border-radius: var(--basic-border-radius);
+  transition: background-color var(--transition-duration-and-func), color var(--transition-duration-and-func), border var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 /* hover and focus effect button*/
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
   color: var(--second-text-color);
-  border-radius: var(--basic-border-radius);
   border-color: var(--accent-color);
-  transition: border-color var(--transition-duration-and-func), background-color var(--transition-duration-and-func), color var(--transition-duration-and-func) ;
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 /* foto full */
 .portfolio-card-img,
@@ -179,6 +178,8 @@ ul {
   letter-spacing: 0.02em;
   color: var(--third-text-color);
   padding: 24px 0px;
+  transition: color var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .current {
 color: #404BBF;
@@ -220,6 +221,8 @@ color: #404BBF;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--third-text-color);
+  transition: color var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .header-address-item {
   display: flex;
@@ -228,8 +231,6 @@ color: #404BBF;
 .header-address-link:is(:hover, :focus),
 .header-menu-link:is(:hover, :focus) {
   color: var(--accent-color);
-  transition: color var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 /* -----------------------HERO SECTION--------------------- */
 .hero-section {
@@ -264,7 +265,7 @@ color: #404BBF;
   padding: 16px 32px;
   margin: auto;
   margin-top: 48px;
-  background: var(--third-background-color);
+  background-color: var(--third-background-color);
   color: var(--second-text-color);
   border-radius: var(--basic-border-radius); 
   border: 1px solid var(--third-background-color);
@@ -306,21 +307,22 @@ color: #404BBF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   padding: 0;
+  cursor: pointer;
+  transition: background-color var(--transition-duration-and-func), border var(--transition-duration-and-func), fill var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .hero-modal-btn-icon {
   fill: #000000;
+  transition: background-color var(--transition-duration-and-func), fill var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .hero-modal-btn:is(:hover, :focus) .hero-modal-btn-icon {
   fill: #FFFFFF;
-  transition: background-color var(--transition-duration-and-func), fill var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
+
 }
 .hero-modal-btn:is(:hover, :focus) {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  border-radius: 50%;
-  transition: background-color var(--transition-duration-and-func), fill var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .hero-modal-window-backdrop.is-hidden {
   visibility: hidden;
@@ -408,6 +410,8 @@ padding-bottom: var(--basic-settings-padding-section);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .team-card-icon {
   width: 16px;
@@ -415,8 +419,6 @@ padding-bottom: var(--basic-settings-padding-section);
 }
 .team-card-social-link:is(:hover, :focus) {
   background-color: var(--accent-color);
-  transition: background-color var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 /* ---------------- CUSTOMERS ----------------------- */
 .customer-section {
@@ -446,13 +448,12 @@ padding-bottom: var(--basic-settings-padding-section);
   fill: #8E8F99;
   border: 1px solid #8E8F99;
   border-radius: var(--basic-border-radius);
+  transition: fill var(--transition-duration-and-func), border var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .customer-link:is(:hover, :focus) .customer-icon {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  border-radius: var(--basic-border-radius);
-  transition: fill var(--transition-duration-and-func), border var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 /* ***************** PORTFOLIO PAGE ************************ */
 /* -------- EXAMPLES OF PROJECTS SECTION ------------------- */
@@ -468,6 +469,8 @@ padding-bottom: var(--basic-settings-padding-section);
   border-radius: var(--basic-border-radius);
   color: var(--fourth-text-color);
   padding: 12px  24px;
+  transition: background-color var(--transition-duration-and-func), box-shadow var(--transition-duration-and-func), border var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .portfolio-button-list {
   display: flex;
@@ -479,8 +482,6 @@ padding-bottom: var(--basic-settings-padding-section);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 2px 1px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: box-shadow var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 /*Row examples of projects */
 .portfolio-card-subtitle{
@@ -496,11 +497,11 @@ padding-bottom: var(--basic-settings-padding-section);
 }
 .portfolio-card-item {
   width: calc((100 - 48px)) / 3;
+  transition: box-shadow var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .portfolio-card-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  transition: box-shadow var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .portfolio-card-content {
   padding: 32px 16px;
@@ -601,6 +602,8 @@ padding-bottom: var(--basic-settings-padding-section);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transition-duration-and-func);
+  transition-timing-function: var(--transition-timing-function-cubic-bezier);
 }
 .footer-icon {
   width: 24px;
@@ -608,6 +611,4 @@ padding-bottom: var(--basic-settings-padding-section);
 }
 .footer-social-link:is(:hover, :focus) {
   background-color: #31D0AA;
-  transition: background-color var(--transition-duration-and-func);
-  transition-timing-function: var(--transition-timing-function-cubic-bezier);
   }
